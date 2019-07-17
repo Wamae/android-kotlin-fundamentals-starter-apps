@@ -59,7 +59,7 @@ class GameFragment : Fragment() {
         })
 
         /** Setting up LiveData observation relationship **/
-        viewModel.word.observe(this, Observer { newWord ->
+        viewModel._word.observe(this, Observer { newWord ->
             binding.wordText.text = newWord
         })
 
